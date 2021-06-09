@@ -4,25 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework 12</title>
-   
-
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Hw-13</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
-  <body>           
-    <label >
-      Введите название страны
+
+  <body>
+    <form class="search-form" id="search-form">
       <input
-      class="input-style csearch__input"
-      type="input"      
-      id="find-country"
-      aria-label=" Поле для ввода">
-      </input>
-    </label> 
-    
-  
-    <ul class="country-info"></ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-    <script src="index.js"></script>
+        type="text"
+        class="search-form__input"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="search-form__btn">Search</button>
+    </form>
+
+    <ul class="gallery"></ul>
+
+    <button type="button" class="btn is-hidden" data-action="load-more">
+      <span class="label">Load-more</span>
+    </button>
   </body>
 </html>
